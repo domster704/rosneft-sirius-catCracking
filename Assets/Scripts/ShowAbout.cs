@@ -1,9 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using UnityEditor;
+using TMPro;
 
 public class ShowAbout : MonoBehaviour
 {
@@ -11,15 +10,21 @@ public class ShowAbout : MonoBehaviour
     private static string text;
     public string fileName;
 
+    public int id;
+
     private void OnMouseDown() {
-        text = ReadString(fileName);
-        info.transform.Find("Title").GetComponent<Text>().text = "XD";
-        info.transform.Find("About").GetComponent<Text>().text = (string) text;
+        // text = ReadString(fileName);
+
+        var manager = ListManager.onInit();
+
+        info.transform.Find("Title").GetComponent<TextMeshProUGUI>().text = manager.list.listObj[id].title;
+        // info.transform.Find("About").GetComponent<Text>().text = text;
+        info.transform.Find("About").GetComponent<TextMeshProUGUI>().text = manager.list.listObj[id].description;
         info.SetActive(true);
     }
 
     private void OnMouseExit() {
-        info.transform.Find("Title").GetComponent<Text>().text = "";
+        // info.transform.Find("Title").GetComponent<TextMeshPro>().text = "";
         info.SetActive(false);
     }
 
