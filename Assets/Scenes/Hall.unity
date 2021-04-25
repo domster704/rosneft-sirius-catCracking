@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.9287103, g: 0.9287103, b: 0.9287103, a: 1}
+  m_IndirectSpecularColor: {r: 0.8315452, g: 0.8315452, b: 0.8315452, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -51,8 +51,8 @@ LightmapSettings:
     m_IndirectOutputScale: 1
     m_AlbedoBoost: 1
     m_EnvironmentLightingMode: 0
-    m_EnableBakedLightmaps: 1
-    m_EnableRealtimeLightmaps: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
     serializedVersion: 12
     m_Resolution: 2
@@ -491,6 +491,11 @@ PrefabInstance:
     - target: {fileID: 1142777207, guid: d86fb7c4bce517848a5e7d56722dea14, type: 3}
       propertyPath: sceneName
       value: Polygon
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845346458660561499, guid: d86fb7c4bce517848a5e7d56722dea14,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4795780872955002392, guid: d86fb7c4bce517848a5e7d56722dea14,
         type: 3}
@@ -1293,6 +1298,56 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5626197172839026838, guid: dad70901285f3214cbdd0bcf93d9259b,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5626197172839026838, guid: dad70901285f3214cbdd0bcf93d9259b,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5626197172839026838, guid: dad70901285f3214cbdd0bcf93d9259b,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5626197172839026838, guid: dad70901285f3214cbdd0bcf93d9259b,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5626197172839026838, guid: dad70901285f3214cbdd0bcf93d9259b,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658897826536353244, guid: dad70901285f3214cbdd0bcf93d9259b,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658897826536353244, guid: dad70901285f3214cbdd0bcf93d9259b,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658897826536353244, guid: dad70901285f3214cbdd0bcf93d9259b,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658897826536353244, guid: dad70901285f3214cbdd0bcf93d9259b,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658897826536353244, guid: dad70901285f3214cbdd0bcf93d9259b,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8567783655774057225, guid: dad70901285f3214cbdd0bcf93d9259b,
         type: 3}
       propertyPath: m_Name
