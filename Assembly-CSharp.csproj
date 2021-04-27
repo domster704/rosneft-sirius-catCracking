@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\ObjectsList.cs" />
     <Compile Include="Assets\Scripts\ShowAbout.cs" />
     <Compile Include="Assets\Scripts\ShowTip.cs" />
+    <Compile Include="Assets\Scripts\StartEngine.cs" />
     <Compile Include="Assets\Scripts\TakeObject.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />

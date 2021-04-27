@@ -12,6 +12,15 @@ public class ShowAbout : MonoBehaviour
 
     public int id;
 
+    private void Start() {
+        /*if (info == null) {
+            info = GameObject.Find("Canvas/Info");
+            Debug.Log(info);
+            info.SetActive(false);
+        }*/
+    }
+
+
     private void OnMouseDown() {
         // text = ReadString(fileName);
 
