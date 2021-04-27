@@ -126,6 +126,8 @@ MonoBehaviour:
   objectInfo: {fileID: 1666801517951420971, guid: e8c407523ff7199438cb460977bacfa9,
     type: 3}
   fire: {fileID: 100000, guid: bf495eacf58e31146ab012aa89ac68da, type: 3}
+  steam: {fileID: 100000, guid: 32aafb358d61bd14b9b27ed0871fe43b, type: 3}
+  bottle: {fileID: 2337037644633585463, guid: 11a0ab0cb873a74419c9388813e428d1, type: 3}
 --- !u!114 &2541049063630599798
 MonoBehaviour:
   m_ObjectHideFlags: 0

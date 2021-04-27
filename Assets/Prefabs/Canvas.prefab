@@ -1355,6 +1355,33 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 48
       objectReference: {fileID: 0}
+    - target: {fileID: 1666801517951420971, guid: e8c407523ff7199438cb460977bacfa9,
+        type: 3}
+      propertyPath: m_text
+      value: 'Object: None
+
+        Mode: inv'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1666801517951420971, guid: e8c407523ff7199438cb460977bacfa9,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1666801517951420971, guid: e8c407523ff7199438cb460977bacfa9,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1666801517951420971, guid: e8c407523ff7199438cb460977bacfa9,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1666801517951420971, guid: e8c407523ff7199438cb460977bacfa9,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5981021183796016900, guid: e8c407523ff7199438cb460977bacfa9,
         type: 3}
       propertyPath: m_Name

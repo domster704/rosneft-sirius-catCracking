@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\DoTeleport.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GenerateOil.cs" />
+    <Compile Include="Assets\Scripts\Grabbable.cs" />
     <Compile Include="Assets\Scripts\ListManager.cs" />
     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\ObjectsList.cs" />
