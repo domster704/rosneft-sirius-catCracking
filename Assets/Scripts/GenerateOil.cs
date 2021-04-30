@@ -8,8 +8,8 @@ public class GenerateOil : MonoBehaviour
 
     void Start()
     {
-        for (int i = 0; i < 4; i++) {
-            Instantiate(dropOil, place.transform.position + new Vector3(0, 0.1f, 0), Quaternion.identity);
+        for (int i = 0; i < 50; i++) {
+            Instantiate(dropOil, place.transform.position + new Vector3(0, 0, 0), Quaternion.identity);
         }
     }
 

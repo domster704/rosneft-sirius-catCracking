@@ -17,6 +17,8 @@ public class TakeObject : MonoBehaviour {
     public GameObject steam;
     public GameObject bottle;
 
+    private bool isFill = false;
+
     private static string mode = "inv";  // grab 
 
     private int countOfFire = 0;
@@ -34,10 +36,7 @@ public class TakeObject : MonoBehaviour {
                 objectInfo.text = "Object: None\nMode: " + mode;
             }
         }
-    }
 
-    void FixedUpdate()
-    {
         if (Input.GetButtonDown("Fire1")) {
             rayC();
         }
@@ -45,6 +44,11 @@ public class TakeObject : MonoBehaviour {
         if (Input.GetButtonDown("Fire2")) {
             putObj();
         }
+    }
+
+    void FixedUpdate()
+    {
+        
     }
 
     private void putObj() {
@@ -60,7 +64,9 @@ public class TakeObject : MonoBehaviour {
 
                 if (mode == "grab") {
                     current_gameObj.transform.parent = null;
-                    current_gameObj.GetComponent<Rigidbody>().isKinematic = false;
+                    if (current_gameObj.GetComponent<Rigidbody>() != null) {
+                        current_gameObj.GetComponent<Rigidbody>().isKinematic = false;
+                    }
                 }
 
                 objectInfo.text = "Object: None\n Mode: " + mode;
@@ -80,7 +86,9 @@ public class TakeObject : MonoBehaviour {
                 countOfFire = 0;
                 if (mode == "grab") {
                     hit.collider.transform.SetParent(_cam.transform);
-                    hit.collider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+                    if (current_gameObj.GetComponent<Rigidbody>() != null) {
+                        current_gameObj.GetComponent<Rigidbody>().isKinematic = true;
+                    }
                 } else if (mode == "inv") {
                     current_gameObj.SetActive(false);
                 }
@@ -92,13 +100,17 @@ public class TakeObject : MonoBehaviour {
 
                 Instantiate(fire, hit.point + new Vector3(0, 0.05f, 0), hit.transform.rotation);
                 countOfFire += 1;
-            } else if (hit.collider.name == "Engine" && objectInfo.text.Contains("canister")) {
+            } else if (hit.collider.name == "Engine" && objectInfo.text.Contains("Canister") && isFill) {
                 Instantiate(steam, hit.transform.position + new Vector3(0, 0, 0.1f), Quaternion.Euler(0, 90, 0));
                 hit.collider.gameObject.GetComponent<AudioSource>().Play();
 
                 StartEngine.isStart = true;
+                isFill = false;
             } else if (hit.collider.name == "MMP" && objectInfo.text.Contains("ForMMP")) {
                 Instantiate(bottle, hit.collider.gameObject.transform.position + new Vector3(-1, 0, 0), Quaternion.Euler(90, 0, 0));
+            } else if (hit.collider.name.Contains("GasStation") && objectInfo.text.Contains("Canister") && isFill == false) {
+                isFill = true;
+                Debug.Log(isFill);
             }
         }
     }
