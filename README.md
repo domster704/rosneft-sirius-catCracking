@@ -4,4 +4,4 @@
 
 Написано на движке Unity на C#
 
-_**Финальная версия симмуляции**_ - https://github.com/domster704/CatalyticCrackingVR
+_**Финальная версия симмуляции**_ - https://github.com/domster704/catalytic-cracking-vr
